@@ -1,12 +1,13 @@
 $(function () {
     $("#login").click(function () {
-        alert("login");
+
+        let username = $("input[name=username]").val();
+        let password = $("input[name=password]").val();
+        alert("login:"+ username + ":"+ password);
 
 
-        var resultElement = document.getElementById('login-id');
-        resultElement.innerHTML = '';
 
-        axios.get('http://jsonplaceholder.typicode.com/todos')
+        axios.get('http://35.226.238.158/moodle/login/token.php?username='+username+'&password='+password+'&service=moodle_mobile_app')
             .then(function (response) {
                 console.log(response);
             })
