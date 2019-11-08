@@ -41053,3 +41053,22 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
     padding-left:0px;
     padding-right:0px;
   }
+  .timeline-item{
+    margin-top:20px;
+  }
+
+.btnSubirArchivo{
+  background:transparent;
+  color: #232323;
+  font-size:14px;
+  border: 1px solid #232323;
+  padding: 10px 10px;
+  border-radius:25px;
+  text-decoration:none;
+  transition:0.4s all;
+}
+.btnSubirArchivo:hover{
+  background:#0168fa;
+  color: white;
+  border: 1px solid #0168fa;
+}
