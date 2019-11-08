@@ -13847,7 +13847,11 @@ textarea.parsley-success:focus {
     .footer {
       display: flex;
       align-items: center;
-      justify-content: space-between; } }
+      justify-content: space-between;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%; } }
   .footer a {
     padding: 0;
     color: #1b2e4b; }
