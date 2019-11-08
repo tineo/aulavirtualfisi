@@ -41072,3 +41072,6 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
   color: white;
   border: 1px solid #0168fa;
 }
+.ui-datepicker{
+  padding:0px !important;
+}
