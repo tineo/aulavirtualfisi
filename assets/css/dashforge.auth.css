@@ -34,10 +34,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 340px; }
+  width: 340px; 
+  margin:auto;}
   @media (min-width: 1200px) {
     .sign-wrapper {
-      width: 340px; } }
+      width: 340px;
+    margin: none; } }
   .sign-wrapper .form-group label {
     display: block;
     margin-bottom: 5px; }
