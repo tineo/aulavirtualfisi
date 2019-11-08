@@ -12,9 +12,11 @@ $(function () {
 
         }
         axios(options).then(response => {
-            alert('Token:'+response.data.token);
-            localStorage.setItem('sessionid',response.data.token);
-            window.location.replace('page-profile-view.html');
+            if(response.data.token != undefined || response.data.token != null || response.data.token != ''  ){
+                alert('Token: '+response.data.token);
+                localStorage.setItem('sessionid',response.data.token);
+                window.location.replace('page-profile-view.html');
+            }
         }).catch(error =>{
             console.log(error);
         });
