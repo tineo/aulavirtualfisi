@@ -69,15 +69,53 @@
         <li class="nav-item">
           <a href="#" class="nav-link">Cursos</a>
         </li>
-        <li class="nav-item">
-          <a href="app-chat.html" class="nav-link">Chat</a>
-        </li>
       </ul>
     </div><!-- navbar-menu-wrapper -->
     <div class="navbar-right">
-      <button id="CerrarSesion" class="btn btn-buy"></i>
-        <span>Cerrar Sesión</span>
-      </button>
+        <div class="navbar-right">
+            <div class="dropdown dropdown-message">
+              <a href="" class="dropdown-link new-indicator" data-toggle="dropdown">
+                <i data-feather="message-square"></i>
+                <span>1</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <div class="dropdown-header">Nuevos Mensajes</div>
+                <a href="" class="dropdown-item">
+                  <div class="media">
+                    <div class="avatar avatar-sm avatar-online"><img src="../https://via.placeholder.com/350" class="rounded-circle" alt=""></div>
+                    <div class="media-body mg-l-15">
+                      <strong>Socrates Itumay</strong>
+                      <p>nam libero tempore cum so...</p>
+                      <span>Mar 15 12:32pm</span>
+                    </div><!-- media-body -->
+                  </div><!-- media -->
+                </a>
+                <div class="dropdown-footer"><a href="">Ver todos los mensajes</a></div>
+              </div><!-- dropdown-menu -->
+            </div><!-- dropdown -->
+            <div class="dropdown dropdown-notification">
+              <a href="" class="dropdown-link new-indicator" data-toggle="dropdown">
+                <i data-feather="bell"></i>
+                <span>1</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <div class="dropdown-header">Notificaciones</div>
+                <a href="" class="dropdown-item">
+                  <div class="media">
+                    <div class="avatar avatar-sm avatar-online"><img src="../https://via.placeholder.com/350" class="rounded-circle" alt=""></div>
+                    <div class="media-body mg-l-15">
+                      <p>Congratulate <strong>Socrates Itumay</strong> for work anniversaries</p>
+                      <span>Mar 15 12:32pm</span>
+                    </div><!-- media-body -->
+                  </div><!-- media -->
+                </a>
+                <div class="dropdown-footer"><a href="">Ver todas las notificaciones</a></div>
+              </div><!-- dropdown-menu -->
+            </div><!-- dropdown -->
+            <button id="CerrarSesion" class="btn btn-buy"></i>
+              <span>Cerrar Sesión</span>
+            </button>
+        </div><!-- navbar-right -->
     </div><!-- navbar-right -->
   </header><!-- navbar -->
 
@@ -250,29 +288,30 @@
 
         </div><!-- timeline-group -->
         <div class="profile-sidebar col-12 col-md-3">
-          <div class="row">
-            <div class="col-sm-3 col-md-2 col-lg-12">
-              <div class="avatar avatar-xxl avatar-online"><img src="https://via.placeholder.com/500"
-                  class="rounded-circle" alt=""></div>
-            </div><!-- col -->
-            <div class="col-sm-8 col-md-7 col-lg-12">
-              <h5 class="mg-b-2 tx-spacing--1"></h5>
-              <p class="tx-color-03 mg-b-25">@fenchiumao</p>
+            <div class="row">
+              <div class="col-sm-3 col-md-2 col-lg-12">
+                <div class="avatar avatar-xxl avatar-online"><img src="https://via.placeholder.com/500" class="rounded-circle" alt="" id="field-avatar"></div>
+              </div><!-- col -->
+              <div class="col-sm-8 col-md-7 col-lg-12">
+                <h5 class="mg-b-2 tx-spacing--1"></h5>
+                <p class="tx-color-03 mg-b-25" id="field-username">@fenchiumao</p>
 
-              <p class="tx-13 tx-color-02 mg-b-25">Redhead, Innovator, Saviour of Mankind, Hopeless Romantic, Attractive
-                20-something Yogurt Enthusiast...</p>
-            </div><!-- col -->
-            <div class="col-sm-6 col-md-5 col-lg mg-t-40">
-              <label class="tx-sans tx-10 tx-semibold tx-uppercase tx-color-01 tx-spacing-1 mg-b-15">Información de
-                contacto</label>
-              <ul class="list-unstyled profile-info-list">
-                <li><i data-feather="home"></i> <span class="tx-color-03">Westfield, Oakland, CA</span></li>
-                <li><i data-feather="smartphone"></i> <a href="">(+51) 994 224 498</a></li>
-                <li><i data-feather="mail"></i> <a href="">me@fenchiumao.me</a></li>
-              </ul>
-            </div><!-- col -->
-          </div><!-- row -->
+                <p class="tx-13 tx-color-02 mg-b-25" id="field-fullname">Redhead, Innovator, Saviour of Mankind, Hopeless Romantic, Attractive 20-something Yogurt Enthusiast...</p>
+              </div><!-- col -->
+
+              <div class="col-sm-6 col-md-5 col-lg mg-t-40">
+                <label class="tx-sans tx-10 tx-semibold tx-uppercase tx-color-01 tx-spacing-1 mg-b-15">Información de contacto</label>
+                <ul class="list-unstyled profile-info-list">
+                  <li><i data-feather="home"></i> <span class="tx-color-03" id="field-address">Westfield, Oakland, CA</span></li>
+                  <!--<li><i data-feather="smartphone"></i> <a href="" id="field-phone">(+51) 994 224 498</a></li>-->
+                  <li><i data-feather="mail"></i> <a href="" id="field-email">me@fenchiumao.me</a></li>
+                </ul>
+              </div><!-- col -->
+            </div><!-- row -->
+
         </div><!-- profile-sidebar -->
+
+        
       </div>
     </div><!-- media -->
   </div><!-- container -->
@@ -301,6 +340,8 @@
   <!-- append theme customizer -->
   <script src="../../lib/js-cookie/js.cookie.js"></script>
   <script src="../../assets/js/dashforge.settings.js"></script>
+  <script src="../../assets/js/axios.min.js"></script>
+  <script src="../../assets/js/course-page.js"></script>
 
   <script>
     $(function () {
