@@ -34,6 +34,7 @@ $(function () {
         $("#field-address").text(profile.city);
         $("#field-email").text(profile.email);
         $("#field-avatar").attr("src",profile.profileimageurl);
+        $("#field-description").html(profile.description);
 
     }).catch(error =>{
         console.log(error);
