@@ -18,10 +18,9 @@ $(function () {
         axios(options).then(response => {
             console.log(response);
             if(response.data.token != undefined ){
-                alert('Token: '+response.data.token);
+                alert('Bievenido, Gracias por ingresar');
                 localStorage.setItem('sessionid',response.data.token);
                 window.location.replace('page-profile-view.html');
-
             }else{
                 $('#modal6').modal('show');
             }
