@@ -26,6 +26,14 @@ $(function () {
     axios(options).then(response => {
         console.log(response);
         console.log(response.data);
+        console.log(response.data[0].username);
+
+        let profile =  response.data[0];
+        $("#field-username").text(profile.username);
+        $("#field-fullname").text(profile.fullname);
+        $("#field-address").text(profile.city);
+        $("#field-email").text(profile.email);
+        $("#field-avatar").attr("src",profile.profileimageurl);
 
     }).catch(error =>{
         console.log(error);
