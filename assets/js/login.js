@@ -9,7 +9,7 @@ $(function () {
         let password = $("input[name=password]").val();
         //alert("login:"+ username + ":"+ password);
         //let username =  "ihc";
-        //let password = "1Hc-1Hc1-1";
+        //let password = "1Hc-1Hc1-";
         const options = {
             method : 'GET',
             url: 'http://35.226.238.158/moodle/login/token.php?username='+username+'&password='+password+'&service=moodle_mobile_app',
