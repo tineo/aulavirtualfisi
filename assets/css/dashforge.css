@@ -41048,3 +41048,8 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
 
 .wd-280 {
   width: 280px; }
+
+  .np{
+    padding-left:0px;
+    padding-right:0px;
+  }

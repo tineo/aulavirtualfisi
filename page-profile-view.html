@@ -79,49 +79,15 @@
     <div class="content content-fixed content-profile">
       <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
         <div class="media d-block d-lg-flex">
-          <div class="profile-sidebar mg-t-40 mg-lg-t-0 pd-lg-l-25">
+          <div class="profile-sidebar col-12 col-sm-4 col-md-5 col-lg-4 np">
                 <div class="row">
                   <div class="col-sm-6 col-md-5 col-lg mg-t-40">
                     <div class="d-flex align-items-center justify-content-between mg-b-20">
-                      <h6 class="tx-13 tx-uppercase tx-semibold mg-b-0">People You May Know</h6>
+                      <h6 class="tx-13 tx-uppercase tx-semibold mg-b-0">Calendario</h6>
                     </div>
-                    <ul class="list-unstyled media-list mg-b-15">
-                      <li class="media align-items-center">
-                        <a href=""><div class="avatar"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div></a>
-                        <div class="media-body pd-l-15">
-                          <p class="tx-medium mg-b-2"><a href="" class="link-01">Allan Ray Palban</a></p>
-                          <span class="tx-12 tx-color-03">Senior Business Analyst</span>
-                        </div>
-                      </li>
-                      <li class="media align-items-center">
-                        <a href=""><div class="avatar"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div></a>
-                        <div class="media-body pd-l-15">
-                          <p class="tx-medium mg-b-2"><a href="" class="link-01">Rhea Castanares</a></p>
-                          <span class="tx-12 tx-color-03">Product Designer</span>
-                        </div>
-                      </li>
-                      <li class="media align-items-center">
-                        <a href=""><div class="avatar"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div></a>
-                        <div class="media-body pd-l-15">
-                          <p class="tx-medium mg-b-2"><a href="" class="link-01">Philip Cesar Galban</a></p>
-                          <span class="tx-12 tx-color-03">Executive Assistant</span>
-                        </div>
-                      </li>
-                      <li class="media align-items-center">
-                        <a href=""><div class="avatar"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div></a>
-                        <div class="media-body pd-l-15">
-                          <p class="tx-medium mg-b-2"><a href="" class="link-01">Randy Macapala</a></p>
-                          <span class="tx-12 tx-color-03">Business Entrepreneur</span>
-                        </div>
-                      </li>
-                      <li class="media align-items-center">
-                        <a href=""><div class="avatar"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div></a>
-                        <div class="media-body pd-l-15">
-                          <p class="tx-medium mg-b-2"><a href="" class="link-01">Abigail Johnson</a></p>
-                          <span class="d-block tx-12 tx-color-03">System Administrator</span>
-                        </div>
-                      </li>
-                    </ul>
+                    <div class="col-12">
+                        <div id="datepicker2"></div>
+                    </div>
                   </div><!-- col -->
                 </div><!-- row -->
           </div><!-- profile-sidebar -->
@@ -270,7 +236,8 @@
     <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../../lib/feather-icons/feather.min.js"></script>
     <script src="../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-
+    <script src="../lib/prismjs/prism.js"></script>
+    <script src="../lib/jqueryui/jquery-ui.min.js"></script>
     <script src="../../assets/js/dashforge.js"></script>
 
     <!-- append theme customizer -->
@@ -282,7 +249,12 @@
       $(function(){
         'use strict'
 
-        $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="tooltip"]').tooltip();
+
+          $('#datepicker2').datepicker({
+              showOtherMonths: true,
+              selectOtherMonths: true
+            });
       })
     </script>
   </body>
